@@ -7,7 +7,7 @@ import SectionWithStars from './SectionWithStars'
 type LinkItem = { name: string; icon: string; url: string }
 
 const innerLinks: LinkItem[] = [
-  { name: 'GitHub',   icon: '/icons/github.svg',   url: 'https://github.com/yourprofile' },
+  { name: 'GitHub',   icon: '/icons/github.svg',   url: 'https://github.com/Dharaniliv' },
   { name: 'LinkedIn', icon: '/icons/linkedin.svg', url: 'https://linkedin.com/in/yourprofile' },
 
   { name: 'Email',    icon: '/icons/email.svg',    url: 'mailto:dharaniprasath2511@gmail.com' },

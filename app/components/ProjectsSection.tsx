@@ -160,7 +160,7 @@ export default function ProjectsSection() {
           Live Demo
         </motion.button>
       </Link>
-      <Link href="https://github.com/your-portfolio-code" target="_blank">
+      <Link href="https://github.com/Dharaniliv/dharani-portfolio" target="_blank">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
