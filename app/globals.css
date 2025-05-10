@@ -1,2 +1,55 @@
 @import "tailwindcss";
 
+
+
+html, body {
+    overflow-x: hidden; 
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #03040A; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666; 
+    border-radius: 10px;
+    border: 2px solid #03040A; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #FFEDC2; 
+  }
+  
+
+
+
+::selection {
+  background-color: #FFEDC2; 
+  color: #03040A; 
+}
+
+
+::-webkit-selection {
+  background-color: #FFEDC2;
+  color: #03040A;
+}
+
+
+::selection {
+  background-color: #FFEDC2;
+  color: #03040A;
+}
+
+
+.text-bg {
+    background-color: #03040A;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+
+
