@@ -13,12 +13,12 @@ const innerStacks = [
 
 const outerStacks = [
   { name: 'JavaScript', icon: '/icons/javascript.svg' },
-  { name: 'HTML5', icon: '/icons/html.svg' },
+  { name: 'HTML5', icon: '/icons/Html.svg' },
   { name: 'TypeScript', icon: '/icons/typescript.svg' },
   { name: 'Tailwind CSS', icon: '/icons/tailwind.svg' },
   { name: 'Express.js', icon: '/icons/express.svg' },
   { name: 'CSS3', icon: '/icons/css.svg' },
-  { name: 'Figma', icon: '/icons/figma.svg' },
+  { name: 'Figma', icon: '/icons/Figma.svg' },
 ]
 
 export default function TechOrbitSection() {
