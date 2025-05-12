@@ -76,7 +76,7 @@ export default function ProjectsSection() {
               <li>★ A custom <strong>admin dashboard</strong> for managing books</li>
               <li>★ Persistent <strong>wishlist</strong> and cart functionality</li>
               <li>★ Secure <strong>Razorpay</strong> payment integration</li>
-              <li>★ Clean, accessible UI using <strong>Figma</strong> + <strong>Tailwind</strong></li>
+              <li>★ <strong>SEO-optimized pages</strong> for improved search visibility</li>
               <li>★ <strong>Login and Signup with OTP</strong> for authentication</li>
             </ul>
           </div>
@@ -115,7 +115,7 @@ export default function ProjectsSection() {
 
   <div
     className="w-full lg:w-[500px] xl:w-[525px] h-[240px] sm:h-[300px] lg:h-[478px] relative pt-4 px-4 lg:pt-[15px] lg:pl-[12px] flex justify-center items-center cursor-pointer"
-    onClick={() => window.open('https://your-portfolio-link.com', '_blank')} // Clicking the image opens the portfolio link
+    onClick={() => window.open('https://dharaniliv.vercel.app', '_blank')} // Clicking the image opens the portfolio link
   >
     <Image
       src="/images/portfolio.png"
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
     </div>
 
     <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-6">
-      <Link href="https://dharani.vercel.app" target="_blank">
+      <Link href="https://dharaniliv.vercel.app" target="_blank">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

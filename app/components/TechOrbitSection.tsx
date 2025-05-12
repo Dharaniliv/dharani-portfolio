@@ -16,7 +16,7 @@ const outerStacks = [
   { name: 'HTML5', icon: '/icons/Html.svg' },
   { name: 'TypeScript', icon: '/icons/typescript.svg' },
   { name: 'Tailwind CSS', icon: '/icons/tailwind.svg' },
-  { name: 'Express.js', icon: '/icons/express.svg' },
+  { name: 'Express.js', icon: '/icons/express1.svg' },
   { name: 'CSS3', icon: '/icons/css.svg' },
   { name: 'Figma', icon: '/icons/Figma.svg' },
 ]
@@ -42,13 +42,13 @@ export default function TechOrbitSection() {
   const outerRadius = isVerySmallScreen ? 140 : isMobile ? 280 : 500
   const moonSize = isVerySmallScreen ? 90 : isMobile ? 120 : 187
 
-  const cardWidthInner = isVerySmallScreen ? 55 : isMobile ? 90 : 120
-  const cardHeightInner = isVerySmallScreen ? 22 : isMobile ? 38 : 47
+  const cardWidthInner = isVerySmallScreen ? 57 : isMobile ? 90 : 120
+  const cardHeightInner = isVerySmallScreen ? 24 : isMobile ? 38 : 47
   const iconSizeInner = isVerySmallScreen ? 10 : isMobile ? 20 : 24
   const textSizeInner = isVerySmallScreen ? 'text-[6px]' : isMobile ? 'text-xs' : 'text-sm'
 
-  const cardWidthOuter = isVerySmallScreen ? 60 : isMobile ? 100 : 120
-  const cardHeightOuter = isVerySmallScreen ? 25 : isMobile ? 38 : 47
+  const cardWidthOuter = isVerySmallScreen ? 62 : isMobile ? 100 : 120
+  const cardHeightOuter = isVerySmallScreen ? 26 : isMobile ? 38 : 47
   const iconSizeOuter = isVerySmallScreen ? 10 : isMobile ? 20 : 24
   const textSizeOuter = isVerySmallScreen ? 'text-[6px]' : isMobile ? 'text-xs' : 'text-sm'
 

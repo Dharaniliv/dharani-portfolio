@@ -7,15 +7,16 @@ import SectionWithStars from './SectionWithStars'
 type LinkItem = { name: string; icon: string; url: string }
 
 const innerLinks: LinkItem[] = [
-  { name: 'GitHub',   icon: '/icons/github.svg',   url: 'https://github.com/Dharaniliv' },
-  { name: 'LinkedIn', icon: '/icons/linkedin.svg', url: 'https://linkedin.com/in/yourprofile' },
-
+  { name: 'GitHub',   icon: '/icons/github1.svg',   url: 'https://github.com/Dharaniliv' },
+  { name: 'LinkedIn', icon: '/icons/linkedin.svg', url: 'https://www.linkedin.com/in/dharaniprasath' },
   { name: 'Email',    icon: '/icons/email.svg',    url: 'mailto:dharaniprasath2511@gmail.com' },
 ]
 
 const outerLinks: LinkItem[] = [
-  { name: 'Twitter / X', icon: '/icons/twitter.svg',   url: 'https://twitter.com/yourprofile' },
-  { name: 'Instagram',   icon: '/icons/instagram.svg', url: 'https://instagram.com/yourprofile' },
+  { name: 'Twitter / X', icon: '/icons/x1.svg',   url: 'https://x.com/Dharaniliv' },
+  { name: 'Instagram',   icon: '/icons/instagram.svg', url: 'https://www.instagram.com/dharaniliv' },
+    { name: 'Reddit',   icon: '/icons/reddit.svg', url: 'https://www.reddit.com/u/Dharaniliv' },
+    { name: 'Facebook',   icon: '/icons/facebook1.svg', url: 'https://www.facebook.com/dharaniliv' },
 ]
 
 export default function ReachMeOrbitSection() {
@@ -42,46 +43,44 @@ export default function ReachMeOrbitSection() {
 
   const iW = isTiny ?  60 : isMobile ?  90 : 120
   const iH = isTiny ?  22 : isMobile ?  38 :  47
-  const oW = isTiny ?  60 : isMobile ?  90 : 140
+  const oW = isTiny ?  65 : isMobile ?  90 : 140
   const oH = isTiny ?  22 : isMobile ?  38 :  47
   const txtInner = isTiny ? 'text-[6px]' : isMobile ? 'text-xs' : 'text-sm'
   const txtOuter = txtInner
 
   
   const handleEmailClick = () => {
-    const email = 'dharaniprasath2511@gmail.com';
- const subject = encodeURIComponent('Hello Dharani!');
-const body    = encodeURIComponent(
-  `Hi Dharani,
+  const email = 'dharaniprasath2511@gmail.com';
+  const subject = encodeURIComponent('Hello Dharani!');
+  const body = encodeURIComponent(
+    `Hi Dharani,
 
 I came across your portfolio and would love to chat about…`
-);
+  );
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const ua = navigator.userAgent;
 
-   
-    const ua = navigator.userAgent;
-if (ua.includes('Chrome') && !ua.includes('Edge')) {
-  const gmailUrl = 
-    `https://mail.google.com/mail/?view=cm&fs=1` +
-    `&to=${email}` +
-    `&su=${subject}` +
-    `&body=${body}`;
-  window.open(gmailUrl, '_blank');
-  return;
-}
-
-window.location.href = 
-  `mailto:${email}` +
-  `?subject=${subject}` +
-  `&body=${body}`;
-
-   
-    setTimeout(() => {
-      if (!document.hidden) {
-        window.open('https://instagram.com/yourprofile', '_blank');
-      }
-    }, 800);
+  if (!isMobile && ua.includes('Chrome') && !ua.includes('Edge')) {
+    const gmailUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1` +
+      `&to=${email}` +
+      `&su=${subject}` +
+      `&body=${body}`;
+    window.open(gmailUrl, '_blank');
+    return;
   }
+
+  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+
+
+  setTimeout(() => {
+    if (!document.hidden && !isMobile) {
+      window.open('https://instagram.com/yourprofile', '_blank');
+    }
+  }, 800);
+};
+
 
   return (
     <SectionWithStars className="flex flex-col items-center justify-center bg-[#03040A] overflow-hidden py-20 w-full mt-50 pb-10 sm:pb-24 md:pb-36 lg:pb-100 xl:pb-100">

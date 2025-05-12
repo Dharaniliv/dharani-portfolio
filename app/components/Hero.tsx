@@ -53,34 +53,28 @@ export default function Hero() {
   className="mt-12 px-7 py-3 bg-[#FFDFAF] text-[#03040A] font-medium text-base leading-6 tracking-[0.05em] hover:bg-[#FFEDC2] transition duration-300 cursor-pointer"
   onClick={() => {
     const email = 'dharaniprasath2511@gmail.com';
- const subject = encodeURIComponent('Hello Dharani!');
-const body    = encodeURIComponent(
-  `Hi Dharani,
+    const subject = encodeURIComponent('Hello Dharani!');
+    const body = encodeURIComponent(`Hi Dharani,\n\nI came across your portfolio and would love to chat about…`);
 
-I came across your portfolio and would love to chat about…`
-);
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+
+      const ua = navigator.userAgent;
+      if (ua.includes('Chrome') && !ua.includes('Edge')) {
+        const gmailUrl =
+          `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+        window.open(gmailUrl, '_blank');
+        return;
+      }
+    }
 
 
-   
-    const ua = navigator.userAgent;
-if (ua.includes('Chrome') && !ua.includes('Edge')) {
-  const gmailUrl = 
-    `https://mail.google.com/mail/?view=cm&fs=1` +
-    `&to=${email}` +
-    `&su=${subject}` +
-    `&body=${body}`;
-  window.open(gmailUrl, '_blank');
-  return;
-}
-
-window.location.href = 
-  `mailto:${email}` +
-  `?subject=${subject}` +
-  `&body=${body}`;
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 
 
     setTimeout(() => {
-      if (!document.hidden) {
+      if (!document.hidden && !isMobile) {
         window.open('https://instagram.com/yourprofile', '_blank');
       }
     }, 800);
@@ -88,6 +82,7 @@ window.location.href =
 >
   Contact me
 </motion.button>
+
 
 
           </motion.div>
