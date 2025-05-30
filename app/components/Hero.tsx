@@ -52,7 +52,7 @@ export default function Hero() {
   whileTap={{ scale: 0.95 }}
   className="mt-12 px-7 py-3 bg-[#FFDFAF] text-[#03040A] font-medium text-base leading-6 tracking-[0.05em] hover:bg-[#FFEDC2] transition duration-300 cursor-pointer"
   onClick={() => {
-    const email = 'dharaniprasath2511@gmail.com';
+    const email = 'devbydharani@gmail.com';
     const subject = encodeURIComponent('Hello Dharani!');
     const body = encodeURIComponent(`Hi Dharani,\n\nI came across your portfolio and would love to chat about…`);
 
@@ -75,7 +75,7 @@ export default function Hero() {
 
     setTimeout(() => {
       if (!document.hidden && !isMobile) {
-        window.open('https://instagram.com/yourprofile', '_blank');
+        window.open('https://www.instagram.com/dharaniliv', '_blank');
       }
     }, 800);
   }}

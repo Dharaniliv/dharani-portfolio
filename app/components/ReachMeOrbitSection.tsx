@@ -13,9 +13,15 @@ const innerLinks: LinkItem[] = [
 ]
 
 const outerLinks: LinkItem[] = [
-  { name: 'Twitter / X', icon: '/icons/x1.svg',   url: 'https://x.com/Dharaniliv' },
+{
+  name: 'Whatsapp',
+  icon: '/icons/whatsapp.svg',
+  url: `https://wa.me/919500292511?text=${encodeURIComponent(
+    'Hi Dharani, I came across your portfolio and wanted to chat!'
+  )}`
+},
   { name: 'Instagram',   icon: '/icons/instagram.svg', url: 'https://www.instagram.com/dharaniliv' },
-    { name: 'Reddit',   icon: '/icons/reddit.svg', url: 'https://www.reddit.com/u/Dharaniliv' },
+    { name: 'Threads',   icon: '/icons/threads.svg', url: 'https://www.threads.net/@dharaniliv' },
     { name: 'Facebook',   icon: '/icons/facebook1.svg', url: 'https://www.facebook.com/dharaniliv' },
 ]
 
@@ -50,7 +56,7 @@ export default function ReachMeOrbitSection() {
 
   
   const handleEmailClick = () => {
-  const email = 'dharaniprasath2511@gmail.com';
+  const email = 'devbydharani@gmail.com';
   const subject = encodeURIComponent('Hello Dharani!');
   const body = encodeURIComponent(
     `Hi Dharani,
@@ -76,7 +82,7 @@ I came across your portfolio and would love to chat about…`
 
   setTimeout(() => {
     if (!document.hidden && !isMobile) {
-      window.open('https://instagram.com/yourprofile', '_blank');
+      window.open('https://www.instagram.com/dharaniliv', '_blank');
     }
   }, 800);
 };
