@@ -181,6 +181,6 @@ export default function TechOrbitSection() {
           animation: spin 60s linear infinite;
         }
       `}</style>
-    </SectionWithStars>
+</SectionWithStars>
   )
 }

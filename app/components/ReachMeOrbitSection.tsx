@@ -20,9 +20,9 @@ const outerLinks: LinkItem[] = [
     'Hi Dharani, I came across your portfolio and wanted to chat!'
   )}`
 },
-  { name: 'Instagram',   icon: '/icons/instagram.svg', url: 'https://www.instagram.com/dharaniliv' },
-    { name: 'Threads',   icon: '/icons/threads.svg', url: 'https://www.threads.net/@dharaniliv' },
-    { name: 'Facebook',   icon: '/icons/facebook1.svg', url: 'https://www.facebook.com/dharaniliv' },
+  { name: 'Instagram',   icon: '/icons/instagram.svg', url: 'https://www.instagram.com/dharanidevlife' },
+    { name: 'Threads',   icon: '/icons/threads.svg', url: 'https://www.threads.net/@dharanidevlife' },
+    { name: 'Facebook',   icon: '/icons/facebook1.svg', url: 'https://www.facebook.com/dharanidevlife' },
 ]
 
 export default function ReachMeOrbitSection() {
@@ -180,7 +180,7 @@ I came across your portfolio and would love to chat about…`
             )
           })}
         </div>
-      </div>
+      </div>;
 
    
       <style jsx>{`
